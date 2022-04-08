@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/play.css">
+</head>
+<body>
+
+  <h1 id="last-sound-name" class="sound">~~~~~</h1>
+  <div class="drums">
+    <div data-key="a" data-sound="clap" class="drum">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="s" data-sound="hihat" class="drum">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="d" data-sound="kick" class="drum">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="f" data-sound="openhat" class="drum">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="g" data-sound="boom" class="drum">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="h" data-sound="ride" class="drum">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="j" data-sound="snare" class="drum">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="k" data-sound="tom" class="drum">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="l" data-sound="tink" class="drum">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-sound="clap" src="sounds/clap.wav"  preload=auto></audio>
+  <audio data-sound="hihat" src="sounds/hihat.wav" preload=auto></audio>
+  <audio data-sound="kick" src="sounds/kick.wav" preload=auto></audio>
+  <audio data-sound="openhat" src="sounds/openhat.wav" preload=auto></audio>
+  <audio data-sound="boom" src="sounds/boom.wav" preload=auto></audio>
+  <audio data-sound="ride" src="sounds/ride.wav" preload=auto></audio>
+  <audio data-sound="snare" src="sounds/snare.wav" preload=auto></audio>
+  <audio data-sound="tom" src="sounds/tom.wav" preload=auto></audio>
+  <audio data-sound="tink" src="sounds/tink.wav" preload=auto></audio>
+
+  <ul class="history">You played:</ul>
+
+  <script src="play.js"></script>
+
+</body>
+</html>
